@@ -1,0 +1,52 @@
+package programastestes;
+
+public class ImprimirArrays {
+	/**
+	 * Classe imprimir 
+	 * return metodos com impressoes iguais com formar diferentes
+	 */
+	public void imprimir_lista() {
+		/**
+		 * metodo imprimi usando while
+		 */
+		int i=0;
+		int[] array = new int[300];
+		
+		while(i!=300){
+			array[i]=45;
+		System.out.println("o falor é: " + array[i] + " na posição: " + i);
+		i++;
+		}
+		
+		return;}
+
+	
+	public void imprimir_lista2(){
+		/**
+		 * metodo usa for para imprimir
+		 */
+		int i=0;
+		int[] array = new int[300];
+		for(i=0;i!=300;i++){
+		array[i]=45;
+		System.out.println("o falor é: " + array[i] + " na posição: " + i);}
+		
+		return;	
+	}
+	
+	public void imprimir_lista3(int i){
+		/**
+		 * imprime usando metodo em metodo
+		 */
+		int[] array = new int[300];
+		array[i]=45;
+		if(i<=300) {
+		System.out.println("o falor é: " + array[i] + " na posição: " + i);
+		imprimir_lista3(i+1);
+		}
+		return;
+	}
+
+	
+	
+}
