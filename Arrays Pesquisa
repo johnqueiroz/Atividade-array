@@ -1,0 +1,34 @@
+package programastestes;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class ArrayPesquisa {
+	/**
+	 * classe que usa array de int de tamanho 10, ordena em ordem numerica e depois ele busca a posicao no array na qual se define
+	 * o valor  
+	 */
+	int[] array = new int[10];
+	Scanner ler = new Scanner(System.in);
+	
+	
+	public void preencherLista() {
+	for(int i=0;i<10;i++) {
+		System.out.println("digite o " + i +  "° do array");
+		array[i]=ler.nextInt();
+	}
+}
+	public void ordenarAchar() {	
+	Arrays.sort(array);
+	/**
+	 * metodo usado para ordenar em ordem numerica
+	 */
+	System.out.println("A lista acabou de ser ordenada!!!");
+	System.out.println("digite o numero para procurar a posicao:");
+	int procurar = ler.nextInt();
+	System.out.println("A posicao e: " + Arrays.binarySearch(array, procurar));
+	/**
+	 * arrays.binarySearch e um metodo usado para buscar a posicao.
+	 */
+	}
+}
