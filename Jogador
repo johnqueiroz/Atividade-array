@@ -1,0 +1,61 @@
+package programastestes;
+
+public class Jogador extends Usuario {
+	/**
+	 * classe Jogador herda usuario
+	 */
+	private int habilidade;
+	private String posicao;
+	
+	
+	
+	public void falar(int a) {
+		System.out.println("passa a bola");
+	}
+	
+	
+	public void falar() {
+		System.out.println("passa a bola");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public int getHabilidade() {
+		return habilidade;
+	}
+	public void setHabilidade(int habilidade) {
+		this.habilidade = habilidade;
+	}
+	public String getPosicao() {
+		return posicao;
+	}
+	public void setPosicao(String posicao) {
+		this.posicao = posicao;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+}
