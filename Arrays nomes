@@ -1,0 +1,41 @@
+package programastestes;
+
+import java.util.Scanner;
+import java.lang.String;
+import java.util.Arrays;
+
+ 
+ 
+public class ArraysNomes {
+/**
+ * Classe que usa um array de string tamanho 10 e ordena em ordem alfabetica	
+ */
+	String [] Nomes = new String [10];
+	Scanner ler = new Scanner(System.in);
+	
+	public void pegarNomes() {
+		
+		for (int i = 0; i<10; i++) {
+			System.out.println("Coloque o nome, numero : " + i );
+			Nomes [i]= ler.nextLine();
+			
+			
+		}
+		
+	
+		
+	}
+	
+	public void ordenar () {
+		/**
+		 * arrays.sort e usado para ordenar em ordem alfabetica
+		 */
+		Arrays.sort(Nomes);
+	for (int i = 0; i<10; i++) {
+		System.out.print(" posicao : "+ Nomes [i] );
+	}
+		
+	}
+}
+
+
