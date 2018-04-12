@@ -1,0 +1,54 @@
+package programastestes;
+
+public class Tecnico extends Usuario {
+	/**
+	 * classe Tecnico herda usuario
+	 */
+	private String jogada;
+	private int nivelDoTreino;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public String getJogada() {
+		return jogada;
+	}
+	public void setJogada(String jogada) {
+		this.jogada = jogada;
+	}
+	public int getNivelDoTreino() {
+		return nivelDoTreino;
+	}
+	public void setNivelDoTreino(int nivelDoTreino) {
+		this.nivelDoTreino = nivelDoTreino;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
